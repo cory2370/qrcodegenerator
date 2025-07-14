@@ -1,0 +1,28 @@
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1.5em;
+}
+
+* {
+    background-color: antiquewhite;
+    padding-top: 20px;
+}
+.nav {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    top: 0;
+    padding: 0;
+}
+
+.nav-header {
+}
