@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="exp.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        td,
+        th {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<h2>Nhập Quốc Gia Để Tìm</h2>
+<input type="text" name="" id="country">
+<button type="submit" onclick="countryFinderType()">Submit</button>
+<h1>Hoặc</h1>
+<h2>Chọn quốc gia để tìm</h2>
+<select name="" id="countriesOption"></select>
+<button type="submit" onclick="countryFinderSel()">Submit</button>
+<body>
+    <h1>Dân số <span id="countryH1">Quốc Gia</span> qua từng năm</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Năm</td>
+                <td>Dân Số</td>
+                <td>Thay đổi theo năm (số %)</td>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <h2>Dự đoán cho những năm sau</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Năm</td>
+                <td>Dân Số</td>
+                <td>Thay đổi theo năm (số %)</td>
+            </tr>
+        </thead>
+        <tbody id="tbody1"></tbody>
+    </table>
+</html>
