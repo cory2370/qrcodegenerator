@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        td,
+        th {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="country" placeholder="Quoc gia cua ban">
+    <button type="submit" onclick="reportCases()">Tim</button><br>
+    <h2 id="h2">Country</h2>
+    <table>
+        <thead>
+            <tr id="trThead">
+                <td>Ngay</td>
+                <td>Tong</td>
+                <td>Ca trong ngay</td>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</body>
+</html>
